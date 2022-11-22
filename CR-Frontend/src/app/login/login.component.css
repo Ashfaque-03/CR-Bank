@@ -1,0 +1,53 @@
+.loginLfimage {
+    background-image: url(../../assets/login_bgImg.jpg);    
+    }
+
+    .login-headtag {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        background: -webkit-linear-gradient(#ee7724, #d8363a, #dd3675, #b44593);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+         
+      }
+
+      .bg-text {
+       
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+      }
+      .loginLfh1{
+        font-family: 'Merriweather', serif;
+      }
+      .loginLfp{
+        font-size: 1.5rem;
+        font-family: 'Dancing Script', cursive;
+      }
+      
+
+
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }

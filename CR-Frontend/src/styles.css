@@ -1,0 +1,16 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.active-nav-a{
+    color: red;
+    font-weight: bold;
+}
+.inactive-nav-a{
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.inactive-nav-a:hover{
+    color: red;
+}

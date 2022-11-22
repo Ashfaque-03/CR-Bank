@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="p-2" style="margin-left:10rem;" href="home"><img src="../../assets/crlogohome.jpg" alt="" width="80px"></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent content">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left:400px ;">
+                <li class="nav-item mx-4">
+                    <a class="nav-link active-nav-a" aria-current="page" href="home">Home</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link inactive-nav-a" href="">About</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link inactive-nav-a" href="service">Service</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link inactive-nav-a" href="#">Contact</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <button class="btn btn-outline-danger" (click)="log_out()"><strong>Log out</strong></button>
+                </li>
+                <li class="nav-item mx-4">
+                    <button class="btn btn-outline-danger" (click)="delete_Account()"><strong>Delete Account</strong></button>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="hero" class="d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 d-flex align-items-center">
+                <h1>Welcome to <span><span style="color: red;">C</span><span style="color: black;">R</span>-BANK</span>
+                </h1>
+            </div>
+            <div class="col-6">
+                <div class="vertical-line ">
+                    <div class="d-flex justify-content-center">
+                        <img src="../../assets/user-icon.jpeg" style="border-radius: 100%;height: 100px;width: 100px;"
+                            alt="">
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <h2 style="color:black; font-family:'Times New Roman', Times, serif;font-weight: bolder;">
+                            <strong>{{customerName|uppercase}}</strong>
+                        </h2>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <label class="mt-1 mx-4" for=""
+                            style="color:black; font-family:Arial, Helvetica, sans-serif;font-weight: bolder;"><strong>Account
+                                Number : </strong></label>
+                        <input class="form-control w-25 placeholder_home" type="text" disabled
+                            placeholder="{{accountNumber}}">
+
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <label class="mt-1 mx-4" for=""
+                            style="color:black; font-family:Arial, Helvetica, sans-serif;font-weight: bolder;"><strong>Account
+                                Balance : </strong></label>
+                        <input class="form-control w-25 placeholder_home" type="text" disabled
+                            placeholder="${{balance}}">
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <label class="mt-1" for=""
+                            style="color:black; font-family:Arial, Helvetica, sans-serif;font-weight: bolder;margin-right: 25px;"><strong>Credit
+                                Card
+                                Balance : </strong></label>
+                        <input class="form-control w-25 placeholder_home" type="text" disabled
+                            placeholder="${{creditCardBalance}}">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End Hero -->
