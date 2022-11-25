@@ -9,6 +9,8 @@ import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { ServiceComponent } from './service/service.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -18,7 +20,9 @@ import { ServiceComponent } from './service/service.component';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    ServiceComponent
+    ServiceComponent,
+    AboutComponent,
+    ContactComponent
 
     
   ],

@@ -65,4 +65,23 @@ const login=(acno,pswd)=>{
     })
 }
 
-module.exports={register,login}
+const deletebutton=(acno)=>{
+    return mongodb.Customer.deleteOne({"AccountNumber":acno})
+    .then(result=>{
+        if(!result){
+            return{
+                statusCode:400,
+                status:false,
+                message:'No such an account'
+            }
+        }else{
+            return{
+                statusCode:200,
+                status:true,
+                message:`Your account ${acno} successfully deleted`
+            }
+        }
+    })
+}
+
+module.exports={register,login, deletebutton}

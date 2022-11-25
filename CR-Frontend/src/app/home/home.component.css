@@ -1,3 +1,17 @@
+.deactive{
+    pointer-events: none;
+}
+
+.popUp{
+    position:absolute;
+    background-color: white;
+    border: solid 1px red;
+    border-radius: 20px;
+    width: 30%;
+    margin-left: 450px;
+   
+}
+
 #hero {
     width: 100%;
     height: 75vh;

@@ -70,6 +70,13 @@ app.post('/transaction',(req,res)=>{
     })
 })
 
+app.delete('/deletebutton/:acno',(req,res)=>{
+    reglog.deletebutton(req.params.acno)
+    .then(user=>{
+        res.status(user.statusCode).json(user)
+    })
+})
+
 
 app.listen(3000,()=>{
     console.log("server listening to port number 3000")

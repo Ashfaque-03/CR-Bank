@@ -69,4 +69,7 @@ export class ServiceService {
     return this.http.post('http://localhost:3000/creditCard',data,this.toHttpheader())
   }
   
+  deleteYes(acno:any){
+    return this.http.delete(`http://localhost:3000/deletebutton/${acno}`)
+  }
 }

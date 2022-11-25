@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-light" [ngClass]="statusClass">
     <div class="container-fluid">
         <a class="p-2" style="margin-left:10rem;" href="home"><img src="../../assets/crlogohome.jpg" alt="" width="80px"></a>
 
@@ -8,13 +8,13 @@
                     <a class="nav-link active-nav-a" aria-current="page" href="home">Home</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link inactive-nav-a" href="">About</a>
+                    <a class="nav-link inactive-nav-a" href="about">About</a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link inactive-nav-a" href="service">Service</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link inactive-nav-a" href="#">Contact</a>
+                    <a class="nav-link inactive-nav-a" href="contact">Contact</a>
                 </li>
                 <li class="nav-item mx-4">
                     <button class="btn btn-outline-danger" (click)="log_out()"><strong>Log out</strong></button>
@@ -28,8 +28,30 @@
     </div>
 </nav>
 
+
+
 <section id="hero" class="d-flex align-items-center">
     <div class="container">
+
+        <div class="p-4 popUp" *ngIf="deleteButton==true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Delete Account</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="no_button()"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Are you sure to delete your account.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger mx-2" data-bs-dismiss="modal" (click)="yes_button()">Yes</button>
+                  <button type="button" class="btn btn-outline-primary" (click)="no_button()">No</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         <div class="row">
             <div class="col-6 d-flex align-items-center">
                 <h1>Welcome to <span><span style="color: red;">C</span><span style="color: black;">R</span>-BANK</span>
@@ -72,6 +94,11 @@
 
                 </div>
             </div>
+
+            
         </div>
     </div>
+    
 </section><!-- End Hero -->
+
+
