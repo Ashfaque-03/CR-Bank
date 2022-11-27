@@ -70,6 +70,7 @@ export class ServiceComponent {
             localStorage.setItem('balance', JSON.stringify(result.balance))
             // localStorage.setItem('transactionHistory', JSON.stringify(result.Transaction))
             alert(result.message)
+            window.location.reload();
             
             
           }
@@ -95,6 +96,7 @@ export class ServiceComponent {
             localStorage.setItem('balance', JSON.stringify(result.balance))
             // localStorage.setItem('transactionHistory', JSON.stringify(result.Transaction))
             alert(result.message)
+            window.location.reload();
             
             
           }
