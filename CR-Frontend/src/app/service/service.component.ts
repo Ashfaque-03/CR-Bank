@@ -14,18 +14,18 @@ export class ServiceComponent {
 
   depositArray = this.validation.group({
     amount: ['', [Validators.required, Validators.pattern('[0-9]*')]],
-    pswd: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(10)]]
+    pswd: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(10)]]
   })
 
   withdrawArray = this.validation.group({
     amount: ['', [Validators.required, Validators.pattern('[0-9]*')]],
-    pswd: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(10)]]
+    pswd: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(10)]]
   })
 
   creditCardArray = this.validation.group({
     UID: ['', [Validators.required, Validators.pattern('[0-9]*')]],
     Pan: ['', [Validators.required, Validators.minLength(4)]],
-    pswd: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(10)]]
+    pswd: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(10)]]
   })
 
   dummyarray:any=[]
